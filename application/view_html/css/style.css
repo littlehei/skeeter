@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, iframe, hr {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 14px/1.6 Tahoma, microsoft yahei, "微软雅黑", "宋体";
+	*font-family: "微软雅黑", "宋体";
+}
+
+a {
+	color: #009a61;
+	text-decoration: none;
+}
+a:link, a:visited {
+	color: #555;
+	text-decoration: none;
+}
+a:active, a:hover {
+	color: #009a61;
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* 全局导航栏 */
+.global-nav {
+	background: #323a37;
+	width: 100%;
+	min-width: 1200px;
+	height: 38px;
+}
+
+.global-nav a {
+	display: block;
+	padding: 0 10px;
+	height: 34px;
+	line-height: 34px;
+	color: #bbc8c3;
+}
+
+.global-nav a:active, .global-nav a:hover {
+	color: #fff;
+	text-decoration: none; 
+}
+
+.site-nav {
+	float: left;
+	margin-left: 50px;
+}
+.user-nav {
+	float: right;
+	margin-right: 50px;
+}
+.site-nav > li, .user-nav > li {
+	float: left;
+	margin-left: 8px;
+}
+
+.site-nav .current a {
+	border-bottom: 4px solid #008460;
+	color: #FFF;
+}
+
+
+/* 搜索栏 */
+.site-header {
+	height: 60px;
+	background: #f3f6f5;
+}
+.header-wrap {
+
+	margin-left: 18%;
+}
+.header-name, .header-search{
+	float: left;
+}
+
+.header-name {
+	margin-top: 13px;
+	margin-left: 15px;
+	min-width: 200px;
+}
+
+.site-logo {
+	display: inline-block;
+	width: 146px;
+	height: 30px;
+	text-indent: -9999em;
+	vertical-align: middle;
+	/*background: url(../img/logo.png?ciEPUR) left center no-repeat;*/
+}
+
+.header-name strong {
+	display: inline-block;
+	margin-left: 5px;
+	color: #666;
+	font-size: 18px;
+	line-height: .5;
+	vertical-align: middle;
+}
+
+.site-header a:active, .site-header a:hover {
+	text-decoration: none;
+	color: #555;
+}
+
+.header-search {
+	position: relative;
+	margin: 13px 0 0 20px;
+	width: 300px;
+}
+
+.form-control {
+	display: block;
+	width: 90%;
+	height: 20px;
+	padding: 5px 12px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #555;
+	background-color: white;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.header-search .btn-search {
+	position: absolute;
+	top: 1px;
+	right: 5px;
+	border: 0;
+/* background: url(../img/search.png?lONep) center center no-repeat; */
+	width: 30px;
+	height: 30px;
+	text-indent: -9999em;
+}
+.container{
+ width: 1002px;
+}
+.container{
+	margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+.container:after {
+    clear: both;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+*:before, *:after {
+    -moz-box-sizing: border-box;
+}
+.row:after {
+    clear: both;
+}
+
+.edge {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+#main{
+	
+}
+.col-md-9 {
+    width: 75%;
+}
+.tab-nav{
+	border-bottom: 1px solid #EEEEEE;
+}
+#content{
+	
+}
+.post:before, .post-foot:before, .clearfix:after, .detail:after, .post:after, .post-foot:after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+.post {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 10px;
+    word-wrap: break-word;
+}
+.page-nav{
+	    margin: 0 auto;
+    text-align: center;
+}
+
+#footer{
+	border-top: 1px solid #EEEEEE;
+    color: #888888;
+    line-height: 1.6;
+    padding: 40px 0;
+    vertical-align: top;
+}
+#footer .site-link{
+	margin: 0 0 40px;
+}
+
+dt, dd {
+    line-height: 1.5;
+}
+
+dt {
+    font-weight: bold;
+}
+
+#footer .site-link dt{
+	color: #333333;
+    margin-bottom: 20px;
+}
+
+#footer .site-link dd{
+	font-size: 13px;
+    margin: 5px 0;
+}
+
+#footer a {
+    color: #888888;
+}
+
+.col-sm-2{
+	width: 16.6667%;
+}
+
+.copyright{
+	font-size: 13px;
+    text-align: center;
+}
+
+.row{
+	margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}

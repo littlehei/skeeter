@@ -1,0 +1,45 @@
+body {
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+ .navbar-form .form-group {
+ display: block;
+   
+  }
+
+#footer{
+	border-top: 1px solid #EEEEEE;
+    color: #888888;
+    line-height: 1.6;
+    padding: 40px 0;
+    vertical-align: top;
+}
+#footer .site-link{
+	margin: 0 0 40px;
+}
+
+dt, dd {
+    line-height: 1.5;
+}
+
+dt {
+    font-weight: bold;
+}
+
+#footer .site-link dt{
+	color: #333333;
+    margin-bottom: 20px;
+}
+
+#footer .site-link dd{
+	font-size: 13px;
+    margin: 5px 0;
+}
+
+#footer a {
+    color: #888888;
+}
