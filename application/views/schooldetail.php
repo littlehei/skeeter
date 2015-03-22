@@ -12,130 +12,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
-	 
-	  <link href="../css/tss.css" rel="stylesheet">
-	   <link href="../css/schoolnew.css" rel="stylesheet">
-	   <script src="../js/jquery-1.11.1.min.js"></script>
-	  <script src="../js/bootstrap.min.js"></script>
-	 <style type="text/css">
-	body {
-    min-height: 2000px;
-    padding-top: 50px;
-} 	
-
-	.input-group {
-	    width: 130%
-	   }
-	.fa {
-    -moz-font-feature-settings: normal;
-    -moz-font-language-override: normal;
-    display: inline-block;
-    font-family: FontAwesome;
-    font-size: inherit;
-    font-size-adjust: none;
-    font-stretch: normal;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    text-rendering: auto;
-}
-.fa-search:before {
-    content: " ";
-}
-.navbar i {
-    background: url("../image/search.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-   height: 15px;
-    width: 15px;
-}
-.wraper .container{
-   width: 80%;
-}
-.adver{
-	height: 1000px;
-	background-color: #eee;
-}
-
-.comment-body{
-	   word-wrap: break-word;
-}
-
-h2, .h2 {
-    color: #666666;
-    font-size: 24px;
-    margin-bottom: 0px;
-    padding-bottom: 5px;
-
-}
-h3, .h3 {
-    color: #666666;
-    font-size: 16px;
-    margin-bottom: 0px;
-    padding-bottom: 5px;
-
-}
-.topheader {
-  
-    padding: 15px 0;
-}
-
-.media{
-	 float:left;
-  clear:both;
-  width: 100%;
-}
-.media-body{
-	 width: 60%;
-}
-ul{
-	list-style-type:none;
-	 padding-left: 5px;
-}
-ul li {
-    line-height: 24px;
-    margin: 3px 0;
-}
-.detail{
-	padding-left:5px;
-}
-
-.list-group {
-    margin-bottom: 0px;
-   }
- .item {
-    float: left;
-    height: 120px;
-    margin-right: 5px;
-    overflow: hidden;
-    width: 150px;
-}
-.item img {
-    height: 100%;
-    width: 100%;
-}
-.comment-head{
-	 border-bottom: 1px solid #ebebeb;
-    position: relative;
-    margin-bottom: 10px;
-}
-.comment-head .cu{
-	 border-bottom: 2px solid #fa5e00;
-    cursor: default;
-    margin-bottom: -2px;
-}
-.acitem{
-	 margin: 0 0 0 15px;
-    text-decoration: none;
-}
-a:hover{
-	 text-decoration: none;
-}
-	 </style>
-  
+	<link href="../css/schooldetail.css" rel="stylesheet">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	
 	
   </head>
 
-  <body>
+ <body>
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -149,29 +33,29 @@ a:hover{
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-               <li class="active"><a href="#">学校</a></li>
+                 <li class="active"><a href="#">学校</a></li>
 		         <li><a href="#">专业</a></li>
 		         <li><a href="#">职业</a></li>
 				 <li><a href="#">高考</a></li>
-		  <li><a href="#">用户</a></li>
+		         <li><a href="#">用户</a></li>
           </ul>
-<form class="navbar-form navbar-left hidden-xs js-search-form" action="javascript:void(0);" role="search">
-	<div class="input-group">
-	<input class="form-control" type="text" tabindex="3" placeholder="搜索学校，专业，职业，用户" name="search">
-	<span class="input-group-btn">
-		<button class="btn btn-default btn-icon" type="submit">
-			<i class="fa fa-search"></i>
-		</button>
-	</span>
-	</div>
-</form>
+			<form class="navbar-form navbar-left hidden-xs js-search-form" action="javascript:void(0);" role="search">
+				<div class="input-group">
+				<input class="form-control" type="text" tabindex="3" placeholder="搜索学校，专业，职业，用户" name="search">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-icon" type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</span>
+				</div>
+			</form>
           <ul class="nav navbar-nav navbar-right">
-           <li><a href="#">登录</a></li>
-		  <li><a href="#">注册</a></li>
+           	<li><a href="#">登录</a></li>
+		  	<li><a href="#">注册</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+       	 </div><!--/.nav-collapse -->
+      	</div>
+ </div>
 
 <div class="wraper">
 	<div class="topheader">
@@ -197,59 +81,53 @@ a:hover{
 			</div>
 		<div class="media">
 			<div class="media-body pull-left">
-									<ul class="detail">
-										<li>院校类型：985 211
-										</li>
+					<ul class="detail">
+						<li>院校类型：985 211</li>
 								
-										<li>地址： 南山区 华侨城兴隆街2号(华夏艺术中心北面) </li>
-											
-											<li><a>更多信息>></a> </li>
-									</ul>
+						<li>地址： 南山区 华侨城兴隆街2号(华夏艺术中心北面) </li>
+						<li><a>更多信息>></a> </li>
+					</ul>
 			</div>
 			<div id="interest_sectl">
-		<div class="rating_wrap clearbox" rel="v:rating">
-			<p class="rating_self clearfix" typeof="v:Rating">
-				<span class="ll bigstar35"></span>
-				<strong class="ll rating_num" property="v:average">6.5</strong>
-				<span content="10.0" property="v:best"></span>(<span style="height:18px;margin:5px 0;font-size:12px;" property="v:votes">18458</span>人评价)
-			</p>
-			
-		
-		</div>
-	</div>
-			
+				<div class="rating_wrap clearbox" rel="v:rating">
+					<p class="rating_self clearfix" typeof="v:Rating">
+					<span class="ll bigstar35"></span>
+					<strong class="ll rating_num" property="v:average">6.5</strong>
+					<span content="10.0" property="v:best"></span>(<span style="height:18px;margin:5px 0;font-size:12px;" property="v:votes">18458</span>人评价)
+					</p>
+			   </div>
+	        </div>
 		</div>
 	
 	<div class="clearbox">
-
-<div class="ll j a_stars">
-评价:
-<span id="rating">
-<span id="stars">
-<a class="j a_show_login" name="pbtn-3217149-1" href="#">
-<img id="star1" src="../image/star.gif">
-</a>
-<a class="j a_show_login" name="pbtn-3217149-2" href="#">
-<img id="star2" src="../image/star.gif">
-</a>
-<a class="j a_show_login" name="pbtn-3217149-3" href="#">
-<img id="star3" src="../image/star.gif">
-</a>
-<a class="j a_show_login" name="pbtn-3217149-4" href="#">
-<img id="star4" src="../image/star.gif">
-</a>
-<a class="j a_show_login" name="pbtn-3217149-5" href="#">
-<img id="star5" src="../image/star.gif">
-</a>
-</span>
-<span id="rateword" class="pl"></span>
-<input id="n_rating" type="hidden" value="">
-</span>
-</div>
+		<div class="ll j a_stars">
+		评价:
+		<span id="rating">
+		<span id="stars">
+		<a class="j a_show_login" name="pbtn-3217149-1" href="#">
+		<img id="star1" src="../image/star.gif">
+		</a>
+		<a class="j a_show_login" name="pbtn-3217149-2" href="#">
+		<img id="star2" src="../image/star.gif">
+		</a>
+		<a class="j a_show_login" name="pbtn-3217149-3" href="#">
+		<img id="star3" src="../image/star.gif">
+		</a>
+		<a class="j a_show_login" name="pbtn-3217149-4" href="#">
+		<img id="star4" src="../image/star.gif">
+		</a>
+		<a class="j a_show_login" name="pbtn-3217149-5" href="#">
+		<img id="star5" src="../image/star.gif">
+		</a>
+		</span>
+		<span id="rateword" class="pl"></span>
+		<input id="n_rating" type="hidden" value="">
+		</span>
+		</div>
 		
 	</div>
 	
-				</div>
+		</div>
 				<div class="col-md-3">
 					
 				</div>
