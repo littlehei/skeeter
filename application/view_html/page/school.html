@@ -8,93 +8,493 @@
     <meta name="author" content="">
   
 
-    <title>Blog Template for Bootstrap</title>
+    <title>校评网</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-	  <link href="../css/tss.css" rel="stylesheet">
-	  <script src="../js/jquery-1.3.2.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+    <link href="../css/bootstrap.css" rel="stylesheet">
 	 
+	  <link href="../css/tss.css" rel="stylesheet">
+	   <link href="../css/schoolnew.css" rel="stylesheet">
+	   <script src="../js/jquery-1.11.1.min.js"></script>
+	  <script src="../js/bootstrap.min.js"></script>
+	 <style type="text/css">
+	body {
+    min-height: 2000px;
+    padding-top: 50px;
+} 	
+
+	.input-group {
+	    width: 130%
+	   }
+	.fa {
+    -moz-font-feature-settings: normal;
+    -moz-font-language-override: normal;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: inherit;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+.fa-search:before {
+    content: " ";
+}
+.navbar i {
+    background: url("../image/search.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+   height: 15px;
+    width: 15px;
+}
+.wraper .container{
+   width: 80%;
+}
+.adver{
+	height: 1000px;
+	background-color: #eee;
+}
+
+.comment-body{
+	   word-wrap: break-word;
+}
+
+h2, .h2 {
+    color: #666666;
+    font-size: 24px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+
+}
+h3, .h3 {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+
+}
+.topheader {
+  
+    padding: 15px 0;
+}
+
+.media{
+	 float:left;
+  clear:both;
+  width: 100%;
+}
+.media-body{
+	 width: 60%;
+}
+ul{
+	list-style-type:none;
+	 padding-left: 5px;
+}
+ul li {
+    line-height: 24px;
+    margin: 3px 0;
+}
+.detail{
+	padding-left:5px;
+}
+
+.list-group {
+    margin-bottom: 0px;
+   }
+ .item {
+    float: left;
+    height: 120px;
+    margin-right: 5px;
+    overflow: hidden;
+    width: 150px;
+}
+.item img {
+    height: 100%;
+    width: 100%;
+}
+.comment-head{
+	 border-bottom: 1px solid #ebebeb;
+    position: relative;
+    margin-bottom: 10px;
+}
+.comment-head .cu{
+	 border-bottom: 2px solid #fa5e00;
+    cursor: default;
+    margin-bottom: -2px;
+}
+.acitem{
+	 margin: 0 0 0 15px;
+    text-decoration: none;
+}
+a:hover{
+	 text-decoration: none;
+}
+	 </style>
+  
+	
   </head>
 
   <body>
-
-<nav class="navbar navbar-inverse" role="navigation">
- <div class="container">
-   <div class="navbar-header">
-      <a class="navbar-brand" href="#">校评网</a>
-   </div>
-   <div>
-      <ul class="nav navbar-nav">
-         <li class="active"><a href="#">学校</a></li>
-         <li><a href="#">专业</a></li>
-        <li><a href="#">职业</a></li>
-		 <li><a href="#">高考</a></li>
+ <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">校评网</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+               <li class="active"><a href="#">学校</a></li>
+		         <li><a href="#">专业</a></li>
+		         <li><a href="#">职业</a></li>
+				 <li><a href="#">高考</a></li>
 		  <li><a href="#">用户</a></li>
-</ul>
-	<ul class="nav navbar-nav navbar-right">
-		<li><a href="#">登录</a></li>
-		<li><a href="#">注册</a></li>
-      </ul>
-   </div>
-   </div>
-</nav>
-<nav class="navbar navbar-default " role="navigation">
- <div class="container">
-  <div>
-     
-	 <form class="navbar-form" role="search">
-		 <div class="col-lg-4">
-       
-      </div>
-      <div class="col-lg-4">
-         <div class="form-group">
-            <input type="text" class="form-control" style="width:100%" placeholder="搜索学校，专业，职业，用户">
-         </div>
-      </div>
-      <div class="col-lg-4">
-          <button type="submit" class="btn btn-default">搜索</button>
-      </div>
-              
-      </form>    	   
-   </div>
- </nav>
-<div class="container">
-	<div class="row">
-	<div class="col-md-2">
+          </ul>
+<form class="navbar-form navbar-left hidden-xs js-search-form" action="javascript:void(0);" role="search">
+	<div class="input-group">
+	<input class="form-control" type="text" tabindex="3" placeholder="搜索学校，专业，职业，用户" name="search">
+	<span class="input-group-btn">
+		<button class="btn btn-default btn-icon" type="submit">
+			<i class="fa fa-search"></i>
+		</button>
+	</span>
 	</div>
-		<div class="col-md-6">
-			<div class="pull-left">
-			<p>
-				<a href="#"><h3>华中科技大学</h3></a>
-			</p>
+</form>
+          <ul class="nav navbar-nav navbar-right">
+           <li><a href="#">登录</a></li>
+		  <li><a href="#">注册</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+<div class="wraper">
+	<div class="topheader">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="title">
+					<div class="pull-left">
+			
+				<h2><a href="#">华中科技大学</a></h2>
+			
 			</div>
-				<ul class="pull-right list-group">
-				<li class="list-group-item pull-left">
+			<ul class="pull-right list-group">
+				<li class="acbtn list-group-item pull-left">
 					<a href="#"><b>关注
 					</b></a>
 				</li>
-				<li class="list-group-item pull-right">
+				<li class="acbtn list-group-item pull-right">
 					<a href="#"><b>分享
 					</b></a>
 				</li>
 			</ul>
+			</div>
+		<div class="media">
+			<div class="media-body pull-left">
+									<ul class="detail">
+										<li>院校类型：985 211
+										</li>
+								
+										<li>地址： 南山区 华侨城兴隆街2号(华夏艺术中心北面) </li>
+											
+											<li><a>更多信息>></a> </li>
+									</ul>
+			</div>
+			<div id="interest_sectl">
+		<div class="rating_wrap clearbox" rel="v:rating">
+			<p class="rating_self clearfix" typeof="v:Rating">
+				<span class="ll bigstar35"></span>
+				<strong class="ll rating_num" property="v:average">6.5</strong>
+				<span content="10.0" property="v:best"></span>(<span style="height:18px;margin:5px 0;font-size:12px;" property="v:votes">18458</span>人评价)
+			</p>
+			
+		
+		</div>
+	</div>
+			
+		</div>
+	
+	<div class="clearbox">
+
+<div class="ll j a_stars">
+评价:
+<span id="rating">
+<span id="stars">
+<a class="j a_show_login" name="pbtn-3217149-1" href="#">
+<img id="star1" src="../image/star.gif">
+</a>
+<a class="j a_show_login" name="pbtn-3217149-2" href="#">
+<img id="star2" src="../image/star.gif">
+</a>
+<a class="j a_show_login" name="pbtn-3217149-3" href="#">
+<img id="star3" src="../image/star.gif">
+</a>
+<a class="j a_show_login" name="pbtn-3217149-4" href="#">
+<img id="star4" src="../image/star.gif">
+</a>
+<a class="j a_show_login" name="pbtn-3217149-5" href="#">
+<img id="star5" src="../image/star.gif">
+</a>
+</span>
+<span id="rateword" class="pl"></span>
+<input id="n_rating" type="hidden" value="">
+</span>
+</div>
+		
+	</div>
+	
+				</div>
+				<div class="col-md-3">
+					
+				</div>
+			</div>
 		</div>
 	</div>
 <div class="container">
-<div class="media-body">
-							<ul class="detail">
-								<li>院校类型：985 211
-								</li>
-								<li>院校性质：国立</li>
-								<li>国内排名：8</li>
-								<li>建校时间：1951年</li>
-								<li>学生人数：40000</li>
-								<li>网址：<a href="http://www.hust.edu.cn/">http://www.hust.edu.cn/</a></li>
-							</ul>
-						</div>
+	<div class="row">
+	
+		<div class="col-md-9">
+			
+		
+	
+<div>
+	<h3>学校实景(3)</h3>
+	<hr>
+	<div class="clearbox">
+		<ul>
+			<li class="item">
+				<a href="#">
+				<img alt="图片" src="../image/2808.jpg">
+				</a>
+			</li>
+			<li class="item">
+				<a href="#">
+				<img alt="图片" src="../image/2899.jpg">
+				</a>
+			</li>
+			<li class="item">
+				<a href="#">
+				<img alt="图片" src="../image/2900.jpg">
+				</a>
+			</li>
+		</ul>
+		
+	</div>
+		
+	
 </div>
+<div>
+	<h3 class="comment-head"><a class="cu">学校评论</a><span class="sub-title">(256)</span>
+		
+	</h3>
+	
+	<div class="company-list comment-list clearbox"> 
+		
+						<div class="comment-item clearbox">
+							<a class="pull-left" href="#">
+								<img class="img img-circle" title="小米" alt="小米" src="../image/5416621f61261.png">
+							</a>
+							<div class="content pull-right">
+								<div class="row-coment">
+									<span class="bigstar35 rating" title="力荐"></span>
+								<a href="#">小米</a>
+								
+								评论于<em>2014-09-18 16:36</em>
+				
+								</div>
+								<div class="comment-body"> 
+									这学校不错！！！balabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalaNihilbalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabala
+									<div id="collapseOne" class="panel-collapse collapse in">
+									      	 Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred 
+									            nesciunt sapiente ea proident. Ad vegan excepteur butcher vice 
+									           lomo.
+									      </div>
+										<a class="pull-right" data-toggle="collapse" href="#collapseOne"> 更多 </a>
+ 									</div>
+								<div class="misc-info clearbox">
+									<div class="actions  pull-right">
+									<a class="acitem " rel="nofollow" data-id="72501133">
+									<i class="icon i"></i>
+									赞(1)
+									</a>
+									<a class="acitem" title="" href="#" target="_blank">回复</a>
+								
+									<a class="acitem" rel="nofollow" >举报</a>
+									</div>
+						
+								</div>
+							</div>
+							
+						</div>
+<div class="comment-item clearbox" data-id="8">
+<div class="pull-left post-col">
+<div class="content">
+<div class="pull-right">
+<a href="http://localhost/people/2">
+<img class="avatar-24" src="http://localhost/resource/image/2.png" alt="">
+</a>
+</div>
+<div class="row-coment">
+<div class="pull-left">
+<span class="bigstar10 rating" title="力荐"></span>
+</div>
+<div class="user detail pull-left">
+<a href="http://localhost/people/2">wang</a>
+</div>
+评论于
+<em>2015-01-04 23:46:49</em>
+</div>
+<div class="comment-body"> 123123 </div>
+<div class="actions pull-right" data-id="8">
+<div class="pull-left collapseitem">
+<a class="acitem collapseitem" target="_blank" data-toggle="collapse" href="#collapse8" title=""> 回复(1)</a>
+</div>
+<div class="pull-left">
+<a class="acitem juacitem" rel="nofollow" href="javascript:void(0)">举报</a>
+</div>
+</div>
+<div class="misc-info clearbox">
+<div id="collapse8" class="panel-collapse collapse in" style=""> 111111 </div>
+</div>
+</div>
+</div>
+						<div class="comment-item clearbox">
+							<a class="pull-left" href="#">
+								<img class="img pull-left img-circle" title="小米" alt="小米" src="../image/5416621f61261.png">
+							</a>
+							<div class="content pull-right">
+								<div class="row-coment">
+									<span class="bigstar35 rating" title="力荐"></span>
+									<a href="#">小米</a>评论于<em>2014-09-18 16:36</em>
+					
+								</div>
+								<div class="comment-body"> 
+									这学校不错！！！
+								</div>
+								<div class="misc-info">
+									<div class="actions  pull-right">
+									<a class="acitem " rel="nofollow" data-id="72501133">
+									<i class="icon i"></i>
+									赞(1)
+									</a>
+									<a class="acitem" title="" data-toggle="collapse" href="#collapseTwo" target="_blank">回复(3)</a>
+								
+									<a class="acitem" rel="nofollow" >举报</a>
+									</div>
+									<div id="collapseTwo" class="clearbox panel-collapse collapse in">
+									   <div class="replay-item clearbox">
+									   	  <div class="row-coment">
+									<a href="#">小米</a>回复<a href="#">小米</a>
+									</div>
+									<div class="relay-content">
+										 Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred 
+										            nesciunt sapiente ea proident. Ad vegan excepteur butcher vice 
+										           lomo.
+									</div>
+									<div class="re-actions">
+									<em>2014-09-18 16:36</em>
+									<a class="acitem pull-right" title="" href="#" target="_blank">回复</a>
+								</div>
+									   </div>
+									  
+								 <div class="replay-item clearbox">
+									   	  <div class="row-coment">
+									<a href="#">小米</a>回复<a href="#">小米</a>
+									</div>
+									<div class="relay-content">
+										 Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred 
+										            nesciunt sapiente ea proident. Ad vegan excepteur butcher vice 
+										           lomo.
+									</div>
+									<div class="re-actions">
+									<em>2014-09-18 16:36</em>
+									<a class="acitem pull-right" title="" href="#" target="_blank">回复</a>
+								</div>
+									   </div>
+									 <div class="replay-item clearbox">
+									   	  <div class="row-coment">
+									<a href="#">小米</a>回复<a href="#">小米</a>
+									</div>
+									<div class="relay-content">
+										 Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred 
+										            nesciunt sapiente ea proident. Ad vegan excepteur butcher vice 
+										           lomo.
+									</div>
+									<div class="re-actions">
+									<em>2014-09-18 16:36</em>
+									<a class="acitem pull-right" title="" href="#" target="_blank">回复</a>
+								</div>
+									   </div> 
+									   <div class="re-subreplay">
+									   		<textarea id="notesubreplay" class="clearbox" style="display: block; line-height: 20px;"></textarea>
+						<button type="button" class="pull-right btn btn-default">发表</button>  
+									   </div>
+								      	
+									</div>
+ 									</div>
+								</div>
+							</div>
+						
+						<div class="comment-item clearbox">
+							<a class="pull-left" href="#">
+								<img class="img img-circle" title="小米" alt="小米" src="../image/2.png">
+							</a>
+							<div class="content pull-right">
+							<div class="row-coment">
+								<span class="bigstar35 rating" title="力荐"></span>
+								<a href="#">大米</a>评论于<em>2014-09-18 16:36</em>
+				
+							</div>
+							<div class="comment-body"> 
+								这学校不错！！！balabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabalabala
+							</div>
+							<div class="misc-info">
+									<div class="actions  pull-right">
+									<a class="acitem " rel="nofollow" data-id="72501133">
+									<i class="icon i"></i>
+									赞(1)
+									</a>
+									<a class="acitem" title="" href="#" target="_blank">回复</a>
+							
+									<a class="acitem" rel="nofollow" >举报</a>
+									</div>
+						
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment-re">
+						<a class="pull-left" href="#">
+								<img class="img img-circle" title="小米" alt="小米" src="../image/2.png">
+						</a>
+						<div class="comment-right pull-right">
+							<div class="re-head clearbox">发表评论</div>
+					<textarea id="noteAddText" class="clearbox" style="display: block; line-height: 20px;"></textarea>
+						<button type="button" class="clearbox btn btn-default">发表</button>
+						</div>
+						
+						
+					</div>
+</div>
+			
+			
+	
+		</div>
+		<div class="col-md-3">
+			
+				<div class="adver">
+					广告
+				</div>
+			
+		</div>
+	</div>
+
 </div>
 <footer id="footer">
 	<div class="container">
@@ -132,6 +532,13 @@
 	</div>
 </footer>
               
-
+</div>
+<script type="text/javascript">
+   $(function () { 
+   	$('#collapseOne').collapse('hide');
+   	$('#collapseTwo').collapse('hide');
+   	});
+</script>  
  </body>
+ 
 </html>
