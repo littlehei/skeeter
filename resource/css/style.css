@@ -1,0 +1,105 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 14px/22px "微软雅黑","宋体",Arial;
+	color: #333;
+	word-wrap: break-word;
+}
+#login_bg {
+	background: #019875 url(../images/bgwall.png) center 100px no-repeat;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.login_wrapper {
+	width: 640px;
+	color: #777;
+	font-size: 16px;
+	padding-top: 80px;
+	margin: 0 auto;
+
+}
+
+.login_header {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.login_box {
+	min-height: 150px;
+	background: #eafffd;
+	padding: 20px;
+	overflow: hidden;
+}
+
+#login_form {
+	width: 360px;
+	margin: 0;
+	border-right: 1px dashed #999;
+	float: left;
+}
+
+.login_right {
+	float: left;
+	margin: 10px 0 0 30px;
+	line-height: 30px;
+}
+
+#login_form input#email, input#password {
+	width: 296px;
+	font-size: 16px;
+	color: #777;
+	border: none;
+}
+#login_form span.error {
+	margin: 10px 0 10px 0;
+	display: block;
+	font-size: 14px;
+	color: #ff6a6a;
+	text-align: left;
+	line-height: 22px;
+	padding-left: 10px;
+}
+
+input[type="text"], input[type="password"] {
+	outline: none;
+	font: 20px/32px "微软雅黑","宋体",Arial;
+	padding: 6px 10px;
+}
+
+#login_form label {
+	vertical-align: top;
+}
+.register-checkbox {
+	float: left;
+}
+
+#login_form input[type="checkbox"] {
+	margin-bottom: 20px;
+	border: none;
+	background: none;
+}
+
+.fr {
+	float: right;
+	color: #777;
+	margin-right: 45px;
+}
+
+#submit-register {
+	width: 155px;
+	height: 46px;
+	font-size: 16px;
+	line-height: 46px;
+	clear: both;
+	float: left;
+	background: #019875;
+	color: #fff;
+	border: none;
+	text-align: center;
+}
+
+#submit-register:hover {
+	background: #00694e
+}
